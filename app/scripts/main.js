@@ -5,6 +5,11 @@ var mySwiper = new Swiper ('.swiper-container', {
 	slidesPerView: 2,
 	centeredSlides: true,
 	spaceBetween: 30,
+});
 
+var simpleBoard = new DrawingBoard.Board('simple-board', {
+	controls: false,
+	webStorage: false,
+	background: false,
+});
 
-})

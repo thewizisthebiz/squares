@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="">
   <head>
     <meta charset="utf-8">
@@ -39,27 +39,25 @@
 
   <main>
     <section class="c_stack">
+
       <div class="swiper-container c_dock">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img class="o_hash" src="./images/hash.png">
+            <img class="o_hash" src="./images/hash.png" />
           </div>
           <div class="swiper-slide">
-            <div class="c_note--Parent">Slide 1</div>
-          </div>
-          <div class="swiper-slide">
-            <div class="c_note--Parent">Slide 2</div>
-          </div>
-          <div class="swiper-slide">
-            <div class="c_note--Parent">Slide 3</div>
-          </div>
-          <div class="swiper-slide">
-            <div class="c_note--Parent">Slide 4</div>
+            <div class="c_note--Parent">
+              <div class="note_handle"></div>
+              <div class="note_content"></div>
+            </div>
           </div>
         </div>
       </div>
+
       <div class="c_pad">
         <div class="c_note--Child">
+          <div class="note_content" id="simple-board"></div>
+          <div class="note_handle"></div>
         </div>
       </div>
       
@@ -67,6 +65,7 @@
 
     <section class="c_board">
     </section>
+
   </main>
   
   <aside class="c_side-nav is-hidden">
@@ -97,8 +96,10 @@
     <!-- endbuild -->
     
     <!-- build:js scripts/main.js -->
-    <script src="scripts/swiper.min.js"></script>
-    <script src="scripts/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="scripts/swiper.min.js"></script>
+  <script src="scripts/drawingboard.nocontrol.min.js"></script>
+  <script src="scripts/main.js"></script>
     <!-- endbuild -->
   </body>
 </html>
