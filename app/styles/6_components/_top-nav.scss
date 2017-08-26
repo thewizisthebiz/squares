@@ -4,23 +4,23 @@
 	left: 0;
 	width: 100%;
 	height: rem(48px);
-	z-index: 12;
+	z-index: 123;
 
-	padding: rem(6px) 0;
+	padding: rem(12px) 0;
 	background-color: $color-grey-1;
 
 	>*{
 		position: absolute;
 	}
 
-	p{
+	.top-nav_board-title{
 		left: rem(12px);
-		line-height: rem(36px);
+		line-height: rem(30px);
 	}
 
 	button{
-		width: rem(36px);
-		height: rem(36px);
+		width: rem(30px);
+		height: rem(30px);
 		background-color: transparent;
 	}
 

@@ -7,6 +7,7 @@
 
 	background-color: $color-white;
 	position: relative;
+	border-radius: 1px;
 
 	.note_handle{
 		position: absolute;
@@ -20,8 +21,9 @@
 	}
 
 	.note_content{
-
+		/*dunno if we'll actually need to do anything here */
 	}
+
 	.note_content#simple-board{
 		box-sizing: border-box;
 		
@@ -46,4 +48,13 @@
 .c_note--Child{
 	@extend %note;
 	background-color: $color-yellow;
+	z-index: 12;
+
+	&.is-pointer-down{
+		background-color: rgba($color-yellow,0.8);
+
+		&.is-dragging{
+			background-color: rgba($color-yellow,0.4);
+		}
+	}
 }

@@ -15,11 +15,11 @@
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
-    <!-- <link rel="stylesheet" href="styles/swiper.min.css"> -->
-    <link rel="stylesheet" href="styles/swiper.css">
+    <link rel="stylesheet" href="styles/swiper.min.css">
+    <!-- <link rel="stylesheet" href="styles/drawingboard.nocontrol.min.css"> -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    
+    <meta name="apple-mobile-web-app-capable" content="yes">   
   </head>
   <body>
     <!--[if IE]>
@@ -27,9 +27,9 @@
     <![endif]-->
   <header>
     <nav class="c_top-nav">
-      <p>MyCoolBoard</p>
+      <a class="top-nav_board-title" href="./index.html">MyCoolBoard</a>
       <button class="top-nav_grid">
-        <img src="./images/grid.png"/>
+          <img src="./images/grid.png"/>
       </button>
       <button class="top-nav_gear">
         <img src="./images/gear.png"/>
@@ -38,12 +38,23 @@
   </header>
 
   <main>
+    <!-- stack = divergent, individual work; handheld display -->
     <section class="c_stack">
-
-      <div class="swiper-container c_dock">
+      <!-- dock = gallery of hash/parent drop-zones -->
+      <div class="swiper-container c_dock"> 
         <div class="swiper-wrapper">
+
           <div class="swiper-slide">
-            <img class="o_hash" src="./images/hash.png" />
+            <div class="o_hash">
+              <img src="./images/hash.png" />
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="c_note--Parent">
+              <div class="note_handle"></div>
+              <div class="note_content"></div>
+            </div>
           </div>
           <div class="swiper-slide">
             <div class="c_note--Parent">
@@ -51,6 +62,25 @@
               <div class="note_content"></div>
             </div>
           </div>
+          <div class="swiper-slide">
+            <div class="c_note--Parent">
+              <div class="note_handle"></div>
+              <div class="note_content"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="c_note--Parent">
+              <div class="note_handle"></div>
+              <div class="note_content"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="c_note--Parent">
+              <div class="note_handle"></div>
+              <div class="note_content"></div>
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -60,10 +90,11 @@
           <div class="note_handle"></div>
         </div>
       </div>
-      
+    
     </section>
 
     <section class="c_board">
+      <!-- board = convergent group work; large display -->
     </section>
 
   </main>
@@ -99,6 +130,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="scripts/swiper.min.js"></script>
   <script src="scripts/drawingboard.nocontrol.min.js"></script>
+  <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.js"></script>
   <script src="scripts/main.js"></script>
     <!-- endbuild -->
   </body>

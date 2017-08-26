@@ -57,7 +57,7 @@ img {
   width: 100%; }
 
 body {
-  background-color: #191919;
+  background-color: #1e1a1b;
   font-family: "Roboto Mono", "Inconsolas Mono", monospace;
   font-weight: 300; }
 
@@ -70,30 +70,23 @@ a {
 li {
   color: white; }
 
-.o_hash {
-  width: 10rem;
-  height: 10rem; }
-  .o_hash img {
-    width: 100%;
-    height: auto; }
-
 .c_top-nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 3rem;
-  z-index: 12;
-  padding: 0.375rem 0;
-  background-color: #191919; }
+  z-index: 123;
+  padding: 0.75rem 0;
+  background-color: #1e1a1b; }
   .c_top-nav > * {
     position: absolute; }
-  .c_top-nav p {
+  .c_top-nav .top-nav_board-title {
     left: 0.75rem;
-    line-height: 2.25rem; }
+    line-height: 1.875rem; }
   .c_top-nav button {
-    width: 2.25rem;
-    height: 2.25rem;
+    width: 1.875rem;
+    height: 1.875rem;
     background-color: transparent; }
   .c_top-nav button.top-nav_grid {
     left: 0;
@@ -104,27 +97,31 @@ li {
     right: 0.75rem; }
 
 .c_stack {
-  padding-top: 6rem; }
+  padding-top: 4.5rem; }
 
 .c_dock {
-  margin-bottom: 3rem; }
+  margin-bottom: 1.5rem; }
   .c_dock .swiper-wrapper {
-    max-height: 10rem; }
+    max-height: 5.625rem; }
     .c_dock .swiper-wrapper .swiper-slide {
-      width: 10rem;
       display: flex;
       justify-content: center;
       -webkit-justify-content: center; }
+      .c_dock .swiper-wrapper .swiper-slide .o_hash {
+        width: 5.625rem; }
+        .c_dock .swiper-wrapper .swiper-slide .o_hash img {
+          width: 100%;
+          height: 100%; }
       .c_dock .swiper-wrapper .swiper-slide .c_note--Parent {
-        width: 10rem;
-        height: 10rem; }
+        width: 5.625rem; }
 
 .c_note--Parent, .c_note--Child {
   width: 20rem;
   height: 20rem;
   margin: 0 auto;
   background-color: white;
-  position: relative; }
+  position: relative;
+  border-radius: 1px; }
   .c_note--Parent .note_handle, .c_note--Child .note_handle {
     position: absolute;
     top: 0;
@@ -134,6 +131,8 @@ li {
     background-image: url("../images/blk-hash.png");
     background-size: 20%;
     background-repeat: repeat-x; }
+  .c_note--Parent .note_content, .c_note--Child .note_content {
+    /*dunno if we'll actually need to do anything here */ }
   .c_note--Parent .note_content#simple-board, .c_note--Child .note_content#simple-board {
     box-sizing: border-box;
     position: absolute;
@@ -148,6 +147,11 @@ li {
   background-color: #82f3f3; }
 
 .c_note--Child {
-  background-color: #fff27a; }
+  background-color: #fff27a;
+  z-index: 12; }
+  .c_note--Child.is-pointer-down {
+    background-color: rgba(255, 242, 122, 0.8); }
+    .c_note--Child.is-pointer-down.is-dragging {
+      background-color: rgba(255, 242, 122, 0.4); }
 
 /*# sourceMappingURL=main.css.map */
