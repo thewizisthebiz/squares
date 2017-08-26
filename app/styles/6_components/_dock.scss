@@ -1,18 +1,19 @@
-.c_parents{
+.c_dock{
 	margin-bottom: rem(48px);
 
 	.swiper-wrapper{
 		max-height: rem(160px);
-	
+
 		.swiper-slide{
 			width: rem(160px);
 			display: flex;
 			justify-content: center;
 			-webkit-justify-content: center;
-			
-			.o_note, .o_dock{
 
-			}
+			.c_note--Parent{
+				width: rem(160px);
+				height: rem(160px);
+			}			
 		}
 	}
 }

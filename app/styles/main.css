@@ -70,23 +70,12 @@ a {
 li {
   color: white; }
 
-.o_dock {
+.o_hash {
   width: 10rem;
   height: 10rem; }
-  .o_dock img {
+  .o_hash img {
     width: 100%;
     height: auto; }
-
-.o_note, .o_note--child {
-  width: 20rem;
-  height: 20rem;
-  margin: 0 auto;
-  background-color: #fff27a; }
-
-.o_note--parent {
-  width: 10rem;
-  height: 10rem;
-  background-color: #82f3f3; }
 
 .c_top-nav {
   position: fixed;
@@ -114,17 +103,33 @@ li {
   .c_top-nav button.top-nav_gear {
     right: 0.75rem; }
 
-.c_controller {
+.c_stack {
   padding-top: 6rem; }
 
-.c_parents {
+.c_dock {
   margin-bottom: 3rem; }
-  .c_parents .swiper-wrapper {
+  .c_dock .swiper-wrapper {
     max-height: 10rem; }
-    .c_parents .swiper-wrapper .swiper-slide {
+    .c_dock .swiper-wrapper .swiper-slide {
       width: 10rem;
       display: flex;
       justify-content: center;
       -webkit-justify-content: center; }
+      .c_dock .swiper-wrapper .swiper-slide .c_note--Parent {
+        width: 10rem;
+        height: 10rem; }
+
+.c_note--Parent, .c_note--Child {
+  width: 20rem;
+  height: 20rem;
+  margin: 0 auto;
+  background-color: white;
+  background-image: url("./images/blk-hash.png"); }
+
+.c_note--Parent {
+  background-color: #82f3f3; }
+
+.c_note--Child {
+  background-color: #fff27a; }
 
 /*# sourceMappingURL=main.css.map */

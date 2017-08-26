@@ -1,0 +1,20 @@
+%note{
+	$note-size: rem(320px);
+	
+	width: $note-size;
+	height: $note-size;
+	margin: 0 auto;
+
+	background-color: $color-white;
+	background-image: url('./images/blk-hash.png');
+}
+
+.c_note--Parent{
+	@extend %note;
+	background-color: $color-blue;
+}
+
+.c_note--Child{
+	@extend %note;
+	background-color: $color-yellow;
+}

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TheWiz</title>
+    <title>Squares</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
@@ -38,41 +38,39 @@
   </header>
 
   <main>
-
-    <section class="c_controller">
-
-      <div class="swiper-container c_parents">
+    <section class="c_stack">
+      <div class="swiper-container c_dock">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img class="o_dock" src="./images/hash.png">
+            <img class="o_hash" src="./images/hash.png">
           </div>
           <div class="swiper-slide">
-            <div class="o_note--parent">Slide 1</div>
+            <div class="c_note--Parent">Slide 1</div>
           </div>
           <div class="swiper-slide">
-            <div class="o_note--parent">Slide 2</div>
+            <div class="c_note--Parent">Slide 2</div>
           </div>
           <div class="swiper-slide">
-            <div class="o_note--parent">Slide 3</div>
+            <div class="c_note--Parent">Slide 3</div>
           </div>
           <div class="swiper-slide">
-            <div class="o_note--parent">Slide 4</div>
+            <div class="c_note--Parent">Slide 4</div>
           </div>
         </div>
       </div>
-
       <div class="c_pad">
-        <div class="o_note">
+        <div class="c_note--Child">
         </div>
       </div>
+      
     </section>
 
     <section class="c_board">
     </section>
   </main>
   
-  <aside class="is-hidden">
-    <nav class="c_side-nav">
+  <aside class="c_side-nav is-hidden">
+    <nav>
       <ul>
         <li>Save This Board</li>
         <li>Export</li>

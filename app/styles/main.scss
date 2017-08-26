@@ -11,11 +11,12 @@
 @import './4_elements/_body.scss';
 @import './4_elements/_typography.scss';
 
-@import './5_objects/dock.scss';
-@import './5_objects/_note.scss';
+@import './5_objects/_hash.scss';
 
 @import './6_components/_top-nav.scss';
-@import './6_components/_controller.scss';
-@import './6_components/_parents.scss';
-
-//@import './6_components/_board.scss';
+@import './6_components/_stack.scss';
+@import './6_components/_dock.scss';
+@import './6_components/_pad.scss';
+@import './6_components/_notes.scss';
+@import './6_components/_board.scss';
+@import './6_components/_side-nav.scss';
