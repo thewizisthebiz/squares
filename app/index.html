@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TheWiz</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <!-- <link rel="stylesheet" href="styles/swiper.min.css"> -->
+    <link rel="stylesheet" href="styles/swiper.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+  <header>
+    <nav class="c_top-nav">
+      <p>MyCoolBoard</p>
+      <button class="top-nav_grid">
+        <img src="./images/grid.png"/>
+      </button>
+      <button class="top-nav_gear">
+        <img src="./images/gear.png"/>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="c_controller">
+
+      <div class="swiper-container c_parents">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="o_dock" src="./images/hash.png">
+          </div>
+          <div class="swiper-slide">
+            <div class="o_note--parent">Slide 1</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="o_note--parent">Slide 2</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="o_note--parent">Slide 3</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="o_note--parent">Slide 4</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="c_pad">
+        <div class="o_note">
+        </div>
+      </div>
+    </section>
+
+    <section class="c_board">
+    </section>
+  </main>
+  
+  <aside class="is-hidden">
+    <nav class="c_side-nav">
+      <ul>
+        <li>Save This Board</li>
+        <li>Export</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </aside>
+
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/swiper.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

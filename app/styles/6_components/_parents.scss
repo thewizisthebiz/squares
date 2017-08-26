@@ -1,0 +1,18 @@
+.c_parents{
+	margin-bottom: rem(48px);
+
+	.swiper-wrapper{
+		max-height: rem(160px);
+	
+		.swiper-slide{
+			width: rem(160px);
+			display: flex;
+			justify-content: center;
+			-webkit-justify-content: center;
+			
+			.o_note, .o_dock{
+
+			}
+		}
+	}
+}

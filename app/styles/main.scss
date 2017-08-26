@@ -1,0 +1,21 @@
+// bower:scss
+// endbower
+
+@import './1_settings/_settings.scss';
+
+@import './2_tools/_rem.scss';
+@import './2_tools/_is-hidden.scss';
+
+@import './3_generics/_reset.scss';
+
+@import './4_elements/_body.scss';
+@import './4_elements/_typography.scss';
+
+@import './5_objects/dock.scss';
+@import './5_objects/_note.scss';
+
+@import './6_components/_top-nav.scss';
+@import './6_components/_controller.scss';
+@import './6_components/_parents.scss';
+
+//@import './6_components/_board.scss';

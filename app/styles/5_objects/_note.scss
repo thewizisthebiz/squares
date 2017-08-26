@@ -1,0 +1,18 @@
+.o_note{
+	$note-size: rem(320px);
+	width: $note-size;
+	height: $note-size;
+	margin: 0 auto;
+
+	background-color: $color-yellow;
+}
+
+.o_note--child{
+	@extend .o_note;
+}
+
+.o_note--parent{
+	width: rem(160px);
+	height: rem(160px);
+	background-color: $color-blue;
+}
