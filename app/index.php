@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="">
   <head>
     <meta charset="utf-8">
@@ -84,13 +84,24 @@
         </div>
       </div>
 
-      <div class="c_pad">
-        <div class="c_note--Child">
+  <form class="c_pad drawing-form" action="create-drawing.php" method="post">
+
+    <!-- this will be the drawingboard container -->
+    <div class="c_note--Child">
           <div class="note_content" id="simple-board"></div>
           <div class="note_handle"></div>
-        </div>
-      </div>
-    
+    </div>
+
+    <!-- this will be the input used to pass the drawingboard content to the server -->
+    <input type="hidden" name="image" value="">
+
+    <label>Name<input type="text" name="name" /></label>
+
+    <button>Submit</button>
+
+  </form> 
+
+
     </section>
 
     <section class="c_board">

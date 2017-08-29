@@ -1,29 +1,6 @@
-console.log('\'Allo \'Allo!');
-
-var mySwiper = new Swiper ('.swiper-container', {
-	// Optional parameters
-	slidesPerView: 2,
-	centeredSlides: true,
-	spaceBetween: 10,
-	grabCursor: true,
-});
-
-var myBoard = new DrawingBoard.Board('simple-board', {
-	controls: false,
-	webStorage: false,
-	background: false,
-	size: 4,
-});
-
-var $draggable = $('.c_note--Child').draggabilly({
-  axis: 'y',
-  handle: '.note_handle',
-  containment: '.c_stack',
-});
-
-
 //javascript code that intercepts form submission to add drawingboard content to the form data sent to the server
 
+var myBoard = new DrawingBoard.Board('board');
 
 $('.drawing-form').on('submit', function(e) {
    //get drawingboard content
@@ -40,4 +17,3 @@ $('.drawing-form').on('submit', function(e) {
   //but the best would be to do when the server answers that everything went well
   myBoard.clearWebStorage();
 });
-
